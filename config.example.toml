@@ -22,10 +22,10 @@ admin_user_ids = []
 system_prompt = "You are a helpful assistant."
 
 [backends.local]
-kind = "compatible"
-base_url = "http://127.0.0.1:11434/v1"
-auth = "none"
-account = "local-server"
+kind = "openai"
+base_url = "https://openai.com"
+auth = "api_key"
+account = "$OPENAI_API_KEY"
 
 [models.local]
 backend = "local"
